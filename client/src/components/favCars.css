@@ -1,0 +1,17 @@
+.favCars {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.favItem {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.favName {
+  font-weight: bold;
+}

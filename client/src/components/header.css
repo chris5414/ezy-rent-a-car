@@ -1,0 +1,39 @@
+.header {
+  height: 150px;
+  background-color: rgb(39, 236, 223);
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.headerSearch {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  border: 3px solid yellowgreen;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+}
+
+.headerSearchText {
+  color: green;
+  cursor: pointer;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+}

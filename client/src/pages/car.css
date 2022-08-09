@@ -1,0 +1,74 @@
+.carContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carTitle {
+  font-size: 20px;
+}
+
+.carImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imgWrapper {
+  width: 33%;
+}
+
+.carImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carDetails {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.carDetailsTexts {
+  flex: 3;
+}
+
+.carDetailsPrice {
+  flex: 1;
+}
+
+.carDesc {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.carDetailsPrice {
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carDetailsPrice > h2 {
+  font-weight: 300;
+}
+
+.carDetailsPrice > button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}

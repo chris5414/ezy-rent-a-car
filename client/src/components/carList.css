@@ -1,0 +1,29 @@
+.carList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.carListItem {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carListImg {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carListTitles > h1 {
+  font-size: 18px;
+  color: #444;
+  text-transform: capitalize;
+}
+
+.carListTitles > h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
