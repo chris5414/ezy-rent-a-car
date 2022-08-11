@@ -45,7 +45,7 @@ exports.login = async (req, res, next) => {
       { id: user._id, isAdmin: user.isAdmin },
       process.env.ACCESS_SECRET,
       {
-        expiresIn: "1m",
+        expiresIn: "20m",
       }
     );
 
@@ -60,9 +60,9 @@ exports.login = async (req, res, next) => {
     const response = { access, refresh };
 
     res
-      .cookie("access_token", access, { httpOnly: true, maxAge: 60000 })
+      .cookie("access_token", access, { httpOnly: true })
       .status(200)
-      .json(response);
+      .json({ access: response.access, refresh: response.refresh, user });
   } catch (err) {
     next(err);
   }

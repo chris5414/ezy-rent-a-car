@@ -5,3 +5,9 @@
   align-items: center;
   gap: 30px;
 }
+
+.homeTitle {
+  padding-top: 100px;
+  padding-left: 750px;
+  color: blue;
+}

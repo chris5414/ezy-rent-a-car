@@ -6,6 +6,7 @@ import List from "./pages/List";
 import Car from "./pages/Car";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Create from "./components/Create";
 import { SearchContextProvider } from "./context/SearchContext";
 import { AuthContextProvider } from "./context/AuthContext";
 
@@ -19,7 +20,8 @@ function App() {
             <Route path="/list" element={<List />} />
             <Route path="/cars/:id" element={<Car />} />
             <Route path="/login" element={<Login />} />
-            {/* <Route path="/register" element={<Register />} /> */}
+            <Route path="/register" element={<Register />} />
+            <Route path="/create" element={<Create />} />
           </Routes>
         </BrowserRouter>
       </SearchContextProvider>

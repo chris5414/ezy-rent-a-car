@@ -7,6 +7,7 @@ const {
   getCars,
   byType,
   byLocation,
+  updateUnavailable,
 } = require("../controllers/car.js");
 
 const {
@@ -20,10 +21,12 @@ const Car = require("../models/Car.js");
 const router = express.Router();
 
 // CREATE
-router.post("/", verifyAdmin, createCar);
+router.post("/create/", verifyAdmin, createCar);
 
 // UPDATE
 router.put("/:id", verifyAdmin, updateCar);
+
+router.put("/unavailable/:id", updateUnavailable);
 
 // DELETE
 router.delete("/:id", verifyAdmin, deleteCar);
@@ -37,5 +40,7 @@ router.get("/", getCars);
 router.get("/bytype", byType);
 
 router.get("/bylocation", byLocation);
+
+router.get("/car/:id");
 
 module.exports = router;

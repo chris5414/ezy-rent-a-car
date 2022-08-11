@@ -24,8 +24,12 @@ const Login = () => {
     try {
       const res = await axios.post("/auth/login", credentials);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+      console.log(user);
+      // if (user.user.isAdmin) navigate("/create");
+      // else navigate("/");
       navigate("/");
     } catch (err) {
+      console.log(err.response);
       dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
     }
   };
@@ -35,6 +39,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="container">
+        <h1>User Login</h1>
         <input
           className="inputEmail"
           type="text"
@@ -44,7 +49,7 @@ const Login = () => {
         />
         <input
           className="inputPassword"
-          type="text"
+          type="password"
           placeholder="password"
           id="password"
           onChange={handleChange}

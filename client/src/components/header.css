@@ -1,24 +1,33 @@
 .header {
-  height: 150px;
-  background-color: rgb(39, 236, 223);
+  height: 80px;
+  background-color: rgb(19, 159, 184);
   display: flex;
-  justify-content: left;
+  justify-content: center;
   position: relative;
+  /* max-width: 1024px; */
+  width: 100%;
 }
 
 .headerSearch {
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   background-color: yellow;
   border: 3px solid yellowgreen;
   justify-content: space-around;
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
+  width: 1000px;
+  max-width: 1024px;
+}
+
+.headerDesc {
+  padding-left: 100px;
+  font-weight: 500;
+  color: rgb(42, 12, 173);
 }
 
 .headerSearchText {
-  color: green;
+  color: black;
   cursor: pointer;
 }
 

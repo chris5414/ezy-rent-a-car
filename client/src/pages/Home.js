@@ -4,7 +4,6 @@ import "./home.css";
 import Header from "../components/Header";
 import Featured from "../components/Featured";
 import CarList from "../components/CarList";
-import FavCars from "../components/FavCars";
 
 const Home = () => {
   return (
@@ -15,8 +14,6 @@ const Home = () => {
       <Featured />
       <h1 className="homeTitle">By Location</h1>
       <CarList />
-      <h1 className="homeTitle">Fav</h1>
-      <FavCars />
     </div>
   );
 };

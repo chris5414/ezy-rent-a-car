@@ -30,19 +30,21 @@ const Header = () => {
   return (
     <div className="header">
       <div className="headerList">
-        <div className="headerListItem">
-          <span>Cars Dropdown list</span>
-        </div>
-        <h2 className="headerTitle">Header Title</h2>
-        <p className="headerDesc">Header Description</p>
+        <p className="headerDesc">Find and Rent your Dream Car!</p>
         <div className="headerSearch">
           <div className="headerSearchItem">
-            <input
-              type="text"
+            <select
               className="headerSearchInput"
-              placeholder="Search by location"
               onChange={(e) => setArea(e.target.value)}
-            />
+              value={area}
+            >
+              <option value="none">Please Select</option>
+              <option value="west">West</option>
+              <option value="east">East</option>
+              <option value="central">Central</option>
+              <option value="north">North</option>
+              <option value="south">South</option>
+            </select>
           </div>
           <div className="headerSearchItem">
             <span

@@ -19,6 +19,7 @@ const AuthReducer = (state, action) => {
     case "LOGIN_SUCCESS":
       return {
         user: action.payload,
+        // user: {access: xxxx, refresh:xxxx, user: {id: xxxx, name: xxxx...}}
         loading: false,
         error: null,
       };

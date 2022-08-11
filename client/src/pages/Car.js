@@ -13,6 +13,7 @@ const Car = () => {
   const id = location.pathname.split("/")[2];
 
   const [open, setOpen] = useState(false);
+  const [openPrompt, setOpenPrompt] = useState(false);
 
   const { data, loading, error } = useFetch(`/cars/find/${id}`);
   const { user } = useContext(AuthContext);
@@ -33,7 +34,7 @@ const Car = () => {
 
   const handleClick = () => {
     if (user) {
-      setOpen(true);
+      setOpenPrompt(true);
     } else {
       navigate("/login");
     }
@@ -71,7 +72,7 @@ const Car = () => {
           </div>
         </div>
       )}
-      {open && <Book carId={id} />}
+      {openPrompt && <Book carId={id} setOpen={setOpenPrompt} />}
     </div>
   );
 };

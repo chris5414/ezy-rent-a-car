@@ -6,15 +6,12 @@ const CarList = () => {
   const { data, loading, error } = useFetch("/cars/bylocation");
 
   const images = [
-    "https://sharetribe.imgix.net/5c6aae77-8bfa-446f-98b8-3c28a36f52c6/62c69278-2143-48e2-a536-eae85b53dd1c?auto=format&crop=edges&fit=crop&h=533&w=800&s=84a2aab46dd8e90e395dc046df7059ac",
+    "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800",
 
-    "https://sharetribe.imgix.net/5c6aae77-8bfa-446f-98b8-3c28a36f52c6/62c3f35d-03eb-4eca-82e6-04a065bcba57?auto=format&crop=edges&fit=crop&h=533&w=800&s=b9447cc2095931d8ed2eb6085b3f5e08",
-
-    "https://sharetribe.imgix.net/5c6aae77-8bfa-446f-98b8-3c28a36f52c6/62c3f35d-03eb-4eca-82e6-04a065bcba57?auto=format&crop=edges&fit=crop&h=533&w=800&s=b9447cc2095931d8ed2eb6085b3f5e08",
-
-    "https://sharetribe.imgix.net/5c6aae77-8bfa-446f-98b8-3c28a36f52c6/62c69278-2143-48e2-a536-eae85b53dd1c?auto=format&crop=edges&fit=crop&h=533&w=800&s=84a2aab46dd8e90e395dc046df7059ac",
-
-    "https://sharetribe.imgix.net/5c6aae77-8bfa-446f-98b8-3c28a36f52c6/62c3f35d-03eb-4eca-82e6-04a065bcba57?auto=format&crop=edges&fit=crop&h=533&w=800&s=b9447cc2095931d8ed2eb6085b3f5e08",
+    "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800",
   ];
 
   return (

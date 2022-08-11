@@ -30,6 +30,22 @@ exports.updateCar = async (req, res, next) => {
 };
 // module.exports = updateCar;
 
+exports.updateUnavailable = async (req, res, next) => {
+  try {
+    const data = await Car.updateOne(
+      { "car._id": req.params.id },
+      {
+        $push: { unavailable: req.body.dates },
+      },
+      { new: true }
+    );
+    res.status(200).json(data);
+  } catch (err) {
+    next(err);
+    //   res.status(400).json(err);
+  }
+};
+
 exports.deleteCar = async (req, res, next) => {
   try {
     await Car.findByIdAndDelete(req.params.id);

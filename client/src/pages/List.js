@@ -23,6 +23,19 @@ const List = () => {
     `/cars?location=${area}&min=${min || 0}&max=${max || 999}`
   );
 
+  const getDates = (startDate, endDate) => {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const date = new Date(start.getTime());
+    let dates = [];
+    while (date <= end) {
+      dates.push(new Date(date).getTime());
+      date.setDate(date.getDate() + 1);
+    }
+    return dates;
+  };
+  const allDates = getDates(dates[0].startDate, dates[0].endDate);
+
   const handleClick = () => {
     reFetch();
   };
@@ -82,7 +95,14 @@ const List = () => {
             ) : (
               <>
                 {data.map((item) => (
-                  <SearchList item={item} key={item._id} />
+                  <SearchList
+                    area={area}
+                    min={min}
+                    max={max}
+                    item={item}
+                    reFetch={reFetch}
+                    key={item._id}
+                  />
                 ))}
               </>
             )}

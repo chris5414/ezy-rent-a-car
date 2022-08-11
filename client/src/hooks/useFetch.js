@@ -22,6 +22,7 @@ const useFetch = (url) => {
   //   }, [url]);
 
   const reFetch = async () => {
+    console.log("refetch");
     setLoading(true);
     try {
       const res = await axios.get(url);

@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import "./navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -21,11 +22,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navContainer">
         <Link to="/">
-          <span className="logo">Car Sharing</span>
+          <span className="logo">Ez Rent A Car</span>
         </Link>
         <br></br>
         {user ? (
-          user.email
+          user.user.email
         ) : (
           <div className="navItems">
             <button onClick={handleRegister} className="navButton">

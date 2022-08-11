@@ -3,4 +3,18 @@
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  max-width: 1024px;
+  padding-left: 500px;
+  padding-top: 100px;
+}
+
+.featuredItem {
+  position: relative;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.featuredTitles {
+  align-items: center;
+  padding-left: 50px;
 }

@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  max-width: 1424px;
+  padding-left: 120px;
 }
 
 .carListItem {

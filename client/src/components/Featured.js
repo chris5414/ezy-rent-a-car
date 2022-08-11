@@ -19,21 +19,21 @@ const Featured = () => {
       ) : (
         <>
           <div className="featuredItem">
-            <img src={featured1Img} width="500" height="300"></img>
+            <img src={featured1Img} width="380" height="250"></img>
             <div className="featuredTitles">
               <h1>Luxury</h1>
               <h2>{data[1]} cars</h2>
             </div>
           </div>
           <div className="featuredItem">
-            <img src={featured2Img} width="500" height="300"></img>
+            <img src={featured2Img} width="380" height="250"></img>
             <div className="featuredTitles">
               <h1>Economy</h1>
               <h2>{data[0]} cars</h2>
             </div>
           </div>
           <div className="featuredItem">
-            <img src={featured3Img} width="500" height="300"></img>
+            <img src={featured3Img} width="380" height="250"></img>
             <div className="featuredTitles">
               <h1>7 Sitters</h1>
               <h2>{data[2]} cars</h2>
