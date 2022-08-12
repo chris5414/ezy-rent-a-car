@@ -37,6 +37,8 @@ Managing the states and data are key to resolve the issues.
 
 - Rating feature for each cars, which allows users to rate the car after rental is over.
 
+- A simulated payment system using Stripe.
+
 - Converting to a Car Sharing Platform which another group of users who are the Car Owner, who can post their own cars for leasing out. 
 
 
