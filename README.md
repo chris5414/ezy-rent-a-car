@@ -15,7 +15,7 @@ Another group of user who is the Admin, who can create, update and delete cars i
 
 # Technology Used
 
-Apart from the MERN stack, other libraries like Cookie Parser, React Router DOM and Axios.
+Apart from the MERN stack, other libraries like Cookie Parser, Date-Range, React Router DOM and Axios.
 
 Standard hooks like useState, useEffect, useNavigate, useLocation, useContext and a custom useFetch hooks are used
 
