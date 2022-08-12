@@ -26,7 +26,13 @@ Standard hooks like useState, useEffect, useNavigate, useLocation, useContext an
 
 Majority of the challenging tasks surfaced after the frontend and backend were separately done. Issues and bugs were found when trying to linkup both ends.
 
-Managing the states and data are key to resolve the issues.
+The separate frontend and backend are pretty much seamless and worked well on postman. 
+
+Managing the states is the key to resolve the issues, which boils down to the initial planning.
+
+Which costed me extra time to troubleshoot and replace the initial codes.
+
+It is important to know what kind of situation to use whichever hooks to pass the data without any bugs.
 
 
 # Further Development
