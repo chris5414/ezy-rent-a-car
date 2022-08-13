@@ -35,6 +35,11 @@ Which costed me extra time to troubleshoot and replace the initial codes.
 It is important to know what kind of situation to use whichever hooks to pass the data without any bugs.
 
 
+# Credits
+
+GA SEI-37 instructor (Desmond) and IA (ZhenHao & Nyna)
+
+
 # Further Development
 
 - CSS part was not entirely finish due to time constraint, will be improved shortly.
